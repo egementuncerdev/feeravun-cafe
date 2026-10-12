@@ -1,0 +1,12 @@
+{
+  "name": "Feeravun Cafe — Dijital Menü",
+  "short_name": "Feeravun Cafe",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4eee3",
+  "theme_color": "#a4441c",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

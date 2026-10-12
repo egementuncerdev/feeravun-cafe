@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Feeravun Cafe — Dijital Menü</title>
+  <meta name="description" content="Feeravun Cafe dijital QR menüsü: kahveler, çaylar, tatlılar ve atıştırmalıklar. Kafein, alerjen ve filtrelerle; “Ne içsem?” asistanı ile." data-i18n-content="meta.description">
+  <link rel="canonical" href="https://cafe.egementuncer.dev/">
+  <meta name="theme-color" content="#F4EEE3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191817" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph / sosyal paylaşım -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Feeravun Cafe">
+  <meta property="og:title" content="Feeravun Cafe — Dijital Menü">
+  <meta property="og:description" content="Mobil öncelikli QR menü demosu: filtreler, hesap bölme ve “Ne içsem?” içecek asistanı.">
+  <meta property="og:url" content="https://cafe.egementuncer.dev/">
+  <meta property="og:image" content="https://cafe.egementuncer.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Feeravun Cafe dijital menü önizlemesi">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Tema: boyamadan önce uygula (yanıp sönmeyi önler) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('feeravun-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preload" href="data/menu.json" as="fetch" type="application/json" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400..700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400..700&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu" data-i18n="skip">Menüye atla</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="wordmark" href="./" aria-label="Feeravun Cafe ana sayfa" data-i18n-aria="header.home">
+        <span class="wordmark__name">Feeravun</span> <span class="wordmark__sub">Cafe</span>
+      </a>
+      <span class="table-badge" id="table-badge" hidden></span>
+      <div class="topbar__actions">
+        <button class="icon-btn lang-btn" id="lang-toggle" type="button" aria-label="EN – Switch to English" data-i18n-aria="lang.aria">
+          <span data-i18n="lang.label">EN</span>
+        </button>
+        <button class="icon-btn theme-btn" id="theme-toggle" type="button" aria-label="Koyu temaya geç">
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero__top">
+        <p class="kicker" data-i18n="hero.kicker">Kahve · Çay · Mutfak</p>
+        <p class="hours" data-i18n="hero.hours" data-i18n-vars='{"hours":"08:00–23:00"}'>Her gün 08:00–23:00</p>
+      </div>
+      <h1 class="hero__title" id="hero-title"><span class="visually-hidden">Feeravun Cafe — </span><span data-i18n="hero.title">Menü</span></h1>
+      <div class="hero__bottom">
+        <div>
+          <p class="hero__tagline" data-i18n="hero.tagline">Bugün ne içiyoruz?</p>
+          <p class="hero__lead" data-i18n="hero.lead">Taze çekilmiş kahve, demlenmiş çay ve ev yapımı tatlılar.</p>
+        </div>
+        <p class="hero__count" id="hero-count"></p>
+      </div>
+      <button class="hero__cta" type="button" data-open-quiz>
+        <span class="hero__cta-spark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 2c.6 4.9 2.6 8.4 10 10-7.4 1.6-9.4 5.1-10 10-.6-4.9-2.6-8.4-10-10 7.4-1.6 9.4-5.1 10-10Z" fill="currentColor"/></svg></span>
+        <span data-i18n="hero.cta">Kararsız mısın? Asistana sor</span>
+        <span class="hero__cta-arrow" aria-hidden="true">→</span>
+      </button>
+      <hr class="hero__rule">
+
+      <div class="filters" role="group" aria-labelledby="filters-label">
+        <span class="filters__label" id="filters-label" data-i18n="filters.label">Filtrele</span>
+        <button class="toggle" type="button" aria-pressed="false" data-filter="caffeineFree">
+          <span class="toggle__box" aria-hidden="true"></span><span data-i18n="filters.caffeineFree">Kafeinsiz</span>
+        </button>
+        <button class="toggle" type="button" aria-pressed="false" data-filter="dairyFree">
+          <span class="toggle__box" aria-hidden="true"></span><span data-i18n="filters.dairyFree">Sütsüz</span>
+        </button>
+        <button class="toggle" type="button" aria-pressed="false" data-filter="glutenFree">
+          <span class="toggle__box" aria-hidden="true"></span><span data-i18n="filters.glutenFree">Glutensiz</span>
+        </button>
+        <button class="filters__clear" type="button" id="filters-clear" hidden data-i18n="filters.clear">Temizle</button>
+      </div>
+      <p class="filters__count" id="filters-count" aria-live="polite"></p>
+    </section>
+
+    <nav class="tabs" aria-label="Kategoriler" data-i18n-aria="tabs.label">
+      <div class="container tabs__wrap">
+        <div class="tabs__track" id="tabs"></div>
+      </div>
+    </nav>
+
+    <div class="menu container" id="menu" tabindex="-1">
+      <p class="menu__status" data-i18n="menu.loading">Menü yükleniyor…</p>
+    </div>
+
+    <aside class="container legend" aria-labelledby="legend-title">
+      <h2 class="legend__title" id="legend-title" data-i18n="menu.legend">Alerjen kodları</h2>
+      <ul class="legend__list" id="legend" role="list"></ul>
+      <p class="legend__note" data-i18n="footer.allergy">Alerji veya özel bir beslenme ihtiyacın varsa lütfen siparişten önce ekibimize danış.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__qr" href="qr.html" data-i18n="footer.qr">İşletmeniz için QR kod oluşturun →</a>
+      <div class="footer__mark" aria-hidden="true" data-mark="Feeravun"></div>
+      <div class="footer__fine">
+        <p data-i18n="footer.disclaimer">Feeravun Cafe kurgusal bir kafedir. Bu sayfa egementuncer.dev için hazırlanmış bir portföy demosudur.</p>
+        <p><a href="https://egementuncer.dev" rel="author">egementuncer.dev</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adisyon / hesap bölme -->
+  <div class="dock" id="cart-dock" hidden>
+    <button class="dock__btn" id="cart-open" type="button" aria-haspopup="dialog" aria-controls="cart">
+      <span class="dock__label" data-i18n="cart.bar">Adisyon</span>
+      <span class="dock__count" id="cart-count"></span>
+      <span class="dock__leader" aria-hidden="true"></span>
+      <span class="dock__total" id="cart-total-bar"></span>
+      <svg class="dock__chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 15 6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <dialog class="sheet sheet--receipt" id="cart" aria-labelledby="cart-title">
+    <div class="sheet__panel">
+      <div class="sheet__grip" aria-hidden="true"></div>
+      <div class="sheet__header">
+        <div>
+          <p class="receipt__brand" aria-hidden="true">Feeravun Cafe</p>
+          <h2 class="sheet__title" id="cart-title"><span data-i18n="cart.title">Adisyon</span><span class="receipt__table" id="cart-table"></span></h2>
+        </div>
+        <button class="icon-btn" type="button" data-close aria-label="Adisyonu kapat" data-i18n-aria="cart.close">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <ul class="lines" id="cart-lines" role="list"></ul>
+      <p class="cart__empty" id="cart-empty" data-i18n="cart.empty">Adisyon boş. Menüdeki + ile ürün ekleyebilirsin.</p>
+      <div class="split" id="cart-split">
+        <div class="split__row">
+          <span data-i18n="cart.total">Toplam</span>
+          <strong id="cart-total"></strong>
+        </div>
+        <div class="split__row">
+          <span id="people-label" data-i18n="cart.people">Kişi sayısı</span>
+          <span class="stepper" role="group" aria-labelledby="people-label">
+            <button type="button" class="stepper__btn" data-people="-1" aria-label="Kişi sayısını azalt" data-i18n-aria="cart.decPeople">−</button>
+            <output class="stepper__value" id="people-value" aria-live="polite">2</output>
+            <button type="button" class="stepper__btn" data-people="1" aria-label="Kişi sayısını artır" data-i18n-aria="cart.incPeople">+</button>
+          </span>
+        </div>
+        <div class="split__row split__row--big">
+          <span data-i18n="cart.perPerson">Kişi başı</span>
+          <strong id="per-person" aria-live="polite"></strong>
+        </div>
+        <button class="btn btn--quiet" type="button" id="cart-clear" data-i18n="cart.clear">Adisyonu temizle</button>
+      </div>
+      <p class="cart__note" data-i18n="cart.note">Bu yalnızca bir hesap bölme aracıdır; sipariş gönderilmez.</p>
+    </div>
+  </dialog>
+
+  <!-- "Ne içsem?" asistanı -->
+  <button class="fab" id="quiz-open" type="button" aria-haspopup="dialog" aria-controls="quiz" aria-label="Ne içsem? İçecek öneri asistanını aç" data-i18n-aria="fab.aria">
+    <span class="fab__spark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 2c.6 4.9 2.6 8.4 10 10-7.4 1.6-9.4 5.1-10 10-.6-4.9-2.6-8.4-10-10 7.4-1.6 9.4-5.1 10-10Z" fill="currentColor"/></svg></span>
+    <span class="fab__label" data-i18n="fab.label">Ne içsem?</span>
+  </button>
+
+  <dialog class="sheet" id="quiz" aria-labelledby="quiz-title">
+    <div class="sheet__panel">
+      <div class="sheet__grip" aria-hidden="true"></div>
+      <div class="sheet__header">
+        <h2 class="sheet__title sheet__title--quiz" id="quiz-title" data-i18n="quiz.title">Ne içsem?</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Asistanı kapat" data-i18n-aria="quiz.close">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="quiz__progress" id="quiz-progress" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="quiz__stage" id="quiz-stage"></div>
+    </div>
+  </dialog>
+
+  <p class="visually-hidden" id="announcer" aria-live="polite"></p>
+</body>
+</html>

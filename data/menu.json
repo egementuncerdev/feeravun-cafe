@@ -1,0 +1,468 @@
+{
+  "cafe": {
+    "name": "Feeravun Cafe",
+    "currency": "₺",
+    "hours": "08:00–23:00"
+  },
+
+  "languages": ["tr", "en"],
+
+  "ui": {
+    "tr": {
+      "meta.title": "Feeravun Cafe — Dijital Menü",
+      "meta.description": "Feeravun Cafe dijital QR menüsü: kahveler, çaylar, tatlılar ve atıştırmalıklar. Kafein, alerjen ve filtrelerle; “Ne içsem?” asistanı ile.",
+      "hero.kicker": "Kahve · Çay · Mutfak",
+      "hero.tagline": "Bugün ne içiyoruz?",
+      "hero.count": "{n} lezzet",
+      "hero.cta": "Kararsız mısın? Asistana sor",
+      "menu.legend": "Alerjen kodları",
+      "item.signature": "İmza",
+      "skip": "Menüye atla",
+      "header.home": "Feeravun Cafe ana sayfa",
+      "header.table": "Masa {n}",
+      "lang.label": "EN",
+      "lang.aria": "EN – Switch to English",
+      "theme.toDark": "Koyu temaya geç",
+      "theme.toLight": "Açık temaya geç",
+      "hero.eyebrow": "Dijital menü",
+      "hero.title": "Menü",
+      "hero.lead": "Taze çekilmiş kahve, demlenmiş çay ve ev yapımı tatlılar.",
+      "hero.hours": "Her gün {hours}",
+      "filters.label": "Filtrele",
+      "filters.caffeineFree": "Kafeinsiz",
+      "filters.dairyFree": "Sütsüz",
+      "filters.glutenFree": "Glutensiz",
+      "filters.clear": "Temizle",
+      "filters.count": "{n} / {total} ürün uygun",
+      "filters.sectionEmpty": "Bu kategoride filtrelerine uyan ürün yok.",
+      "tabs.label": "Kategoriler",
+      "menu.loading": "Menü yükleniyor…",
+      "menu.error": "Menü yüklenemedi. Lütfen sayfayı yenileyin.",
+      "card.add": "{name}: adisyona ekle",
+      "card.addMore": "{name}: adisyonda {n} adet, bir tane daha ekle",
+      "card.allergens": "Alerjenler",
+      "card.noAllergens": "Bilinen alerjen yok",
+      "card.unavailable": "Filtrelerine uymuyor",
+      "card.added": "{name} adisyona eklendi",
+      "fab.label": "Ne içsem?",
+      "fab.aria": "Ne içsem? İçecek öneri asistanını aç",
+      "quiz.title": "Ne içsem?",
+      "quiz.close": "Asistanı kapat",
+      "quiz.back": "Geri",
+      "quiz.step": "Adım {n}/{total}",
+      "quiz.resultsTitle": "Sana önerilerim",
+      "quiz.retry": "Tekrar dene",
+      "quiz.show": "Menüde göster",
+      "quiz.add": "Adisyona ekle",
+      "quiz.added": "Eklendi ✓",
+      "quiz.pairing": "Yanına iyi gider:",
+      "quiz.filtersNote": "Aktif filtrelerin ({filters}) dikkate alındı.",
+      "quiz.reason": "{parts} dedin: {caffeine} {item}.",
+      "quiz.reasonFallback": "Tam eşleşme yok ama yakın bir seçim: {caffeine} {item}.",
+      "quiz.match": "Eşleşti",
+      "quiz.noResults": "Filtrelerine uyan içecek bulamadım. Filtreleri gevşetip tekrar dene.",
+      "cart.bar": "Adisyon",
+      "cart.barCount": "{n} ürün",
+      "cart.open": "Adisyonu aç: {n} ürün, toplam {total}",
+      "cart.title": "Adisyon",
+      "cart.close": "Adisyonu kapat",
+      "cart.empty": "Adisyon boş. Menüdeki + ile ürün ekleyebilirsin.",
+      "cart.total": "Toplam",
+      "cart.people": "Kişi sayısı",
+      "cart.perPerson": "Kişi başı",
+      "cart.inc": "{name}: bir adet artır",
+      "cart.dec": "{name}: bir adet azalt",
+      "cart.incPeople": "Kişi sayısını artır",
+      "cart.decPeople": "Kişi sayısını azalt",
+      "cart.clear": "Adisyonu temizle",
+      "cart.note": "Bu yalnızca bir hesap bölme aracıdır; sipariş gönderilmez.",
+      "footer.allergy": "Alerji veya özel bir beslenme ihtiyacın varsa lütfen siparişten önce ekibimize danış.",
+      "footer.disclaimer": "Feeravun Cafe kurgusal bir kafedir. Bu sayfa egementuncer.dev için hazırlanmış bir portföy demosudur.",
+      "footer.qr": "İşletmeniz için QR kod oluşturun →",
+      "footer.portfolio": "egementuncer.dev",
+      "qr.metaTitle": "QR Menü Oluşturucu — Feeravun Cafe",
+      "qr.metaDescription": "Menü bağlantınızı saniyeler içinde QR koda çevirin ve PNG olarak indirin. Feeravun Cafe dijital menü demosu.",
+      "qr.back": "← Menüye dön",
+      "qr.eyebrow": "İşletmeler için",
+      "qr.title": "QR kodunuzu buradan alın",
+      "qr.lead": "Menü bağlantınızı girin, isterseniz masa numarası ekleyin. QR kodu masaya koyun; misafirleriniz okutup menüyü açsın.",
+      "qr.url": "Menü bağlantısı",
+      "qr.table": "Masa numarası (isteğe bağlı)",
+      "qr.tableHint": "Eklenirse menüde “Masa 5” rozeti görünür.",
+      "qr.caption": "QR altındaki yazı",
+      "qr.captionDefault": "Menü için okutun",
+      "qr.download": "PNG indir",
+      "qr.preview": "QR kod önizlemesi",
+      "qr.invalid": "Lütfen geçerli bir bağlantı girin (https://…).",
+      "qr.tooLong": "Bağlantı QR kod için çok uzun.",
+      "qr.encodes": "Kodlanan adres:"
+    },
+    "en": {
+      "meta.title": "Feeravun Cafe — Digital Menu",
+      "meta.description": "Feeravun Cafe digital QR menu: coffee, tea, desserts and snacks. With caffeine levels, allergens, filters and the “What should I drink?” assistant.",
+      "hero.kicker": "Coffee · Tea · Kitchen",
+      "hero.tagline": "What are we having today?",
+      "hero.count": "{n} items",
+      "hero.cta": "Can’t decide? Ask the assistant",
+      "menu.legend": "Allergen key",
+      "item.signature": "Signature",
+      "skip": "Skip to menu",
+      "header.home": "Feeravun Cafe home",
+      "header.table": "Table {n}",
+      "lang.label": "TR",
+      "lang.aria": "TR – Türkçeye geç",
+      "theme.toDark": "Switch to dark theme",
+      "theme.toLight": "Switch to light theme",
+      "hero.eyebrow": "Digital menu",
+      "hero.title": "Menu",
+      "hero.lead": "Freshly ground coffee, brewed tea and homemade desserts.",
+      "hero.hours": "Open daily {hours}",
+      "filters.label": "Filter",
+      "filters.caffeineFree": "Caffeine-free",
+      "filters.dairyFree": "Dairy-free",
+      "filters.glutenFree": "Gluten-free",
+      "filters.clear": "Clear",
+      "filters.count": "{n} of {total} items match",
+      "filters.sectionEmpty": "No items in this category match your filters.",
+      "tabs.label": "Categories",
+      "menu.loading": "Loading menu…",
+      "menu.error": "The menu couldn’t be loaded. Please refresh the page.",
+      "card.add": "Add {name} to your tab",
+      "card.addMore": "{name}: {n} on your tab, add one more",
+      "card.allergens": "Allergens",
+      "card.noAllergens": "No known allergens",
+      "card.unavailable": "Doesn’t match your filters",
+      "card.added": "{name} added to your tab",
+      "fab.label": "What to drink?",
+      "fab.aria": "Open the “What should I drink?” assistant",
+      "quiz.title": "What should I drink?",
+      "quiz.close": "Close the assistant",
+      "quiz.back": "Back",
+      "quiz.step": "Step {n} of {total}",
+      "quiz.resultsTitle": "My picks for you",
+      "quiz.retry": "Try again",
+      "quiz.show": "Show in menu",
+      "quiz.add": "Add to tab",
+      "quiz.added": "Added ✓",
+      "quiz.pairing": "Goes well with:",
+      "quiz.filtersNote": "Your active filters ({filters}) were applied.",
+      "quiz.reason": "You said {parts}: {caffeine} {item}.",
+      "quiz.reasonFallback": "Not a perfect match, but close: {caffeine} {item}.",
+      "quiz.match": "Matched",
+      "quiz.noResults": "I couldn’t find a drink matching your filters. Loosen them and try again.",
+      "cart.bar": "Your tab",
+      "cart.barCount": "{n} items",
+      "cart.open": "Open your tab: {n} items, total {total}",
+      "cart.title": "Your tab",
+      "cart.close": "Close your tab",
+      "cart.empty": "Your tab is empty. Use + on any item to add it.",
+      "cart.total": "Total",
+      "cart.people": "People",
+      "cart.perPerson": "Per person",
+      "cart.inc": "{name}: add one",
+      "cart.dec": "{name}: remove one",
+      "cart.incPeople": "Increase number of people",
+      "cart.decPeople": "Decrease number of people",
+      "cart.clear": "Clear tab",
+      "cart.note": "This is only a bill-splitting calculator; no order is sent.",
+      "footer.allergy": "If you have an allergy or dietary need, please talk to our team before ordering.",
+      "footer.disclaimer": "Feeravun Cafe is a fictional cafe. This page is a portfolio demo made for egementuncer.dev.",
+      "footer.qr": "Create a QR code for your business →",
+      "footer.portfolio": "egementuncer.dev",
+      "qr.metaTitle": "QR Menu Generator — Feeravun Cafe",
+      "qr.metaDescription": "Turn your menu link into a QR code in seconds and download it as PNG. A Feeravun Cafe digital menu demo.",
+      "qr.back": "← Back to menu",
+      "qr.eyebrow": "For businesses",
+      "qr.title": "Get your QR code here",
+      "qr.lead": "Enter your menu link and optionally a table number. Put the QR code on the table; guests scan it to open the menu.",
+      "qr.url": "Menu link",
+      "qr.table": "Table number (optional)",
+      "qr.tableHint": "If set, a “Table 5” badge shows on the menu.",
+      "qr.caption": "Text under the QR",
+      "qr.captionDefault": "Scan for the menu",
+      "qr.download": "Download PNG",
+      "qr.preview": "QR code preview",
+      "qr.invalid": "Please enter a valid link (https://…).",
+      "qr.tooLong": "The link is too long for a QR code.",
+      "qr.encodes": "Encoded address:"
+    }
+  },
+
+  "labels": {
+    "caffeine": {
+      "none":   { "tr": "Kafeinsiz",     "en": "Caffeine-free" },
+      "low":    { "tr": "Düşük kafein",  "en": "Low caffeine" },
+      "medium": { "tr": "Orta kafein",   "en": "Medium caffeine" },
+      "high":   { "tr": "Yüksek kafein", "en": "High caffeine" }
+    },
+    "caffeineAdj": {
+      "none":   { "tr": "kafeinsiz",      "en": "caffeine-free" },
+      "low":    { "tr": "düşük kafeinli", "en": "low-caffeine" },
+      "medium": { "tr": "orta kafeinli",  "en": "medium-caffeine" },
+      "high":   { "tr": "yüksek kafeinli", "en": "high-caffeine" }
+    },
+    "tags": {
+      "hot":     { "tr": "Sıcak",    "en": "Hot" },
+      "cold":    { "tr": "Soğuk",    "en": "Cold" },
+      "sweet":   { "tr": "Tatlı",    "en": "Sweet" },
+      "plain":   { "tr": "Sade",     "en": "Plain" },
+      "light":   { "tr": "Hafif",    "en": "Light" },
+      "filling": { "tr": "Doyurucu", "en": "Filling" }
+    },
+    "allergens": {
+      "milk":   { "tr": "Süt",       "en": "Milk", "code": { "tr": "S", "en": "M" } },
+      "gluten": { "tr": "Gluten",    "en": "Gluten", "code": { "tr": "G", "en": "G" } },
+      "nuts":   { "tr": "Kuruyemiş", "en": "Tree nuts", "code": { "tr": "K", "en": "N" } },
+      "egg":    { "tr": "Yumurta",   "en": "Egg", "code": { "tr": "Y", "en": "E" } },
+      "sesame": { "tr": "Susam",     "en": "Sesame", "code": { "tr": "Su", "en": "Se" } }
+    }
+  },
+
+  "quiz": {
+    "steps": [
+      {
+        "key": "mood",
+        "question": { "tr": "Şu an nasıl hissediyorsun?", "en": "How are you feeling right now?" },
+        "options": [
+          { "value": "sleepy",    "hint": { "tr": "Gözlerim kapanıyor", "en": "Running on empty" }, "label": { "tr": "Uykulu",  "en": "Sleepy" },    "said": { "tr": "uykulu",  "en": "sleepy" } },
+          { "value": "energetic", "hint": { "tr": "Güne hazırım", "en": "Ready for anything" }, "label": { "tr": "Enerjik", "en": "Energetic" }, "said": { "tr": "enerjik", "en": "energetic" } },
+          { "value": "stressed",  "hint": { "tr": "Biraz sakinlik lazım", "en": "I need to slow down" }, "label": { "tr": "Stresli", "en": "Stressed" },  "said": { "tr": "stresli", "en": "stressed" } },
+          { "value": "cheerful",  "hint": { "tr": "Kendimi şımartayım", "en": "Time for a treat" }, "label": { "tr": "Keyifli", "en": "Cheerful" },  "said": { "tr": "keyifli", "en": "cheerful" } }
+        ]
+      },
+      {
+        "key": "temp",
+        "question": { "tr": "Sıcak mı, soğuk mu?", "en": "Hot or cold?" },
+        "options": [
+          { "value": "hot",  "hint": { "tr": "Elimi ısıtsın", "en": "Something to warm my hands" }, "label": { "tr": "Sıcak", "en": "Hot" },  "said": { "tr": "sıcak", "en": "hot" } },
+          { "value": "cold", "hint": { "tr": "Serinlemek istiyorum", "en": "Something to cool me down" }, "label": { "tr": "Soğuk", "en": "Cold" }, "said": { "tr": "soğuk", "en": "cold" } }
+        ]
+      },
+      {
+        "key": "taste",
+        "question": { "tr": "Tatlı mı, sade mi?", "en": "Sweet or plain?" },
+        "options": [
+          { "value": "sweet", "hint": { "tr": "Biraz şeker iyi gelir", "en": "A little sweetness" }, "label": { "tr": "Tatlı", "en": "Sweet" }, "said": { "tr": "tatlı", "en": "sweet" } },
+          { "value": "plain", "hint": { "tr": "Saf tadı olsun", "en": "Just the pure taste" }, "label": { "tr": "Sade",  "en": "Plain" }, "said": { "tr": "sade",  "en": "plain" } }
+        ]
+      }
+    ],
+    "moodNotes": {
+      "sleepy":    { "tr": "Seni ayıltacak kadar güçlü.",          "en": "Strong enough to wake you up." },
+      "energetic": { "tr": "Enerjini taşırmadan dengede tutar.",   "en": "Keeps your energy steady without overdoing it." },
+      "stressed":  { "tr": "Yumuşak ve sakinleştirici bir seçim.", "en": "A soft, calming choice." },
+      "cheerful":  { "tr": "Keyfine keyif katar.",                 "en": "A little treat for a good mood." }
+    }
+  },
+
+  "categories": [
+    { "id": "hot-coffee",  "art": "cup", "name": { "tr": "Sıcak Kahveler", "en": "Hot Coffee" } },
+    { "id": "cold-coffee", "art": "iced", "name": { "tr": "Soğuk Kahveler", "en": "Iced Coffee" } },
+    { "id": "tea",         "art": "teapot", "name": { "tr": "Çaylar",         "en": "Tea" } },
+    { "id": "dessert",     "art": "cake", "name": { "tr": "Tatlılar",       "en": "Desserts" } },
+    { "id": "snack",       "art": "toast", "name": { "tr": "Atıştırmalıklar", "en": "Snacks" } }
+  ],
+
+  "items": [
+    {
+      "id": "espresso", "category": "hot-coffee", "price": 95,
+      "name": { "tr": "Espresso", "en": "Espresso" },
+      "description": { "tr": "Kısa, yoğun ve fındık notalı tek shot.", "en": "A short, intense single shot with nutty notes." },
+      "caffeine": "high", "allergens": [],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "americano", "category": "hot-coffee", "price": 120,
+      "name": { "tr": "Americano", "en": "Americano" },
+      "description": { "tr": "Sıcak suyla açılmış çift shot espresso.", "en": "Double espresso lengthened with hot water." },
+      "caffeine": "high", "allergens": [],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "cappuccino", "category": "hot-coffee", "price": 145,
+      "name": { "tr": "Cappuccino", "en": "Cappuccino" },
+      "description": { "tr": "Espresso, buharda ısıtılmış süt ve kalın köpük.", "en": "Espresso, steamed milk and a thick layer of foam." },
+      "caffeine": "medium", "allergens": ["milk"],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "latte", "category": "hot-coffee", "price": 150,
+      "name": { "tr": "Latte", "en": "Latte" },
+      "description": { "tr": "Bol sütlü, yumuşak içimli espresso.", "en": "A smooth espresso with plenty of steamed milk." },
+      "caffeine": "medium", "allergens": ["milk"],
+      "tags": { "temp": "hot", "taste": "plain", "body": "filling" }
+    },
+    {
+      "id": "mocha", "category": "hot-coffee", "price": 165,
+      "name": { "tr": "Mocha", "en": "Mocha" },
+      "description": { "tr": "Bitter çikolata, espresso ve sıcak süt.", "en": "Dark chocolate, espresso and hot milk." },
+      "caffeine": "medium", "allergens": ["milk"],
+      "tags": { "temp": "hot", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "turkish-coffee", "signature": true, "category": "hot-coffee", "price": 100,
+      "name": { "tr": "Türk Kahvesi", "en": "Turkish Coffee" },
+      "description": { "tr": "Közde pişmiş, bol köpüklü; yanında lokum.", "en": "Slow-cooked and frothy, served with Turkish delight." },
+      "caffeine": "medium", "allergens": [],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+
+    {
+      "id": "cold-brew", "signature": true, "category": "cold-coffee", "price": 160,
+      "name": { "tr": "Cold Brew", "en": "Cold Brew" },
+      "description": { "tr": "18 saat soğuk demlenmiş, ipeksi ve güçlü.", "en": "Steeped cold for 18 hours: silky and strong." },
+      "caffeine": "high", "allergens": [],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "iced-americano", "category": "cold-coffee", "price": 130,
+      "name": { "tr": "Buzlu Americano", "en": "Iced Americano" },
+      "description": { "tr": "Çift shot espresso, soğuk su ve bol buz.", "en": "Double espresso, cold water and plenty of ice." },
+      "caffeine": "high", "allergens": [],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "espresso-tonic", "category": "cold-coffee", "price": 155,
+      "name": { "tr": "Espresso Tonik", "en": "Espresso Tonic" },
+      "description": { "tr": "Tonik üstünde espresso, bir dilim portakal.", "en": "Espresso over tonic with a slice of orange." },
+      "caffeine": "high", "allergens": [],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "iced-latte", "category": "cold-coffee", "price": 160,
+      "name": { "tr": "Buzlu Latte", "en": "Iced Latte" },
+      "description": { "tr": "Soğuk süt, espresso ve buz; ferah ve hafif.", "en": "Cold milk, espresso and ice: fresh and light." },
+      "caffeine": "medium", "allergens": ["milk"],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "iced-hazelnut-latte", "category": "cold-coffee", "price": 175,
+      "name": { "tr": "Fındıklı Buzlu Latte", "en": "Iced Hazelnut Latte" },
+      "description": { "tr": "Ev yapımı fındık şurubu ile buzlu latte.", "en": "Iced latte with house-made hazelnut syrup." },
+      "caffeine": "medium", "allergens": ["milk", "nuts"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "caramel-frappe", "category": "cold-coffee", "price": 185,
+      "name": { "tr": "Karamelli Frappé", "en": "Caramel Frappé" },
+      "description": { "tr": "Buzla çırpılmış kahve, karamel ve krema.", "en": "Coffee blended with ice, caramel and cream." },
+      "caffeine": "low", "allergens": ["milk"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "filling" }
+    },
+
+    {
+      "id": "black-tea", "category": "tea", "price": 45,
+      "name": { "tr": "Demleme Çay", "en": "Turkish Black Tea" },
+      "description": { "tr": "Rize çayı, ince belli bardakta.", "en": "Black tea from Rize, served in a tulip glass." },
+      "caffeine": "medium", "allergens": [],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "green-tea", "category": "tea", "price": 85,
+      "name": { "tr": "Yeşil Çay", "en": "Green Tea" },
+      "description": { "tr": "Hafif çimensi, 80°C’de demlenmiş.", "en": "Lightly grassy, brewed at 80°C." },
+      "caffeine": "low", "allergens": [],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "honey-chamomile", "category": "tea", "price": 90,
+      "name": { "tr": "Ballı Papatya", "en": "Honey Chamomile" },
+      "description": { "tr": "Papatya, bir kaşık çiçek balı ve limon.", "en": "Chamomile with a spoon of honey and lemon." },
+      "caffeine": "none", "allergens": [],
+      "tags": { "temp": "hot", "taste": "sweet", "body": "light" }
+    },
+    {
+      "id": "chai-latte", "category": "tea", "price": 150,
+      "name": { "tr": "Chai Latte", "en": "Chai Latte" },
+      "description": { "tr": "Tarçın, zencefil ve kakuleli baharatlı çay, sütle.", "en": "Spiced tea with cinnamon, ginger and cardamom, with milk." },
+      "caffeine": "low", "allergens": ["milk"],
+      "tags": { "temp": "hot", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "peach-iced-tea", "category": "tea", "price": 110,
+      "name": { "tr": "Şeftalili Soğuk Çay", "en": "Peach Iced Tea" },
+      "description": { "tr": "Ev yapımı, taze şeftali püreli soğuk çay.", "en": "House-made iced tea with fresh peach purée." },
+      "caffeine": "low", "allergens": [],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "light" }
+    },
+    {
+      "id": "hibiscus-cold-brew", "signature": true, "category": "tea", "price": 115,
+      "name": { "tr": "Hibiskus Soğuk Demleme", "en": "Hibiscus Cold Brew" },
+      "description": { "tr": "Şekersiz, ekşimsi ve ferah bitki çayı.", "en": "Unsweetened, tart and refreshing herbal tea." },
+      "caffeine": "none", "allergens": [],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+
+    {
+      "id": "basque-cheesecake", "signature": true, "category": "dessert", "price": 210,
+      "name": { "tr": "San Sebastian Cheesecake", "en": "Basque Cheesecake" },
+      "description": { "tr": "Yanık yüzeyli, içi kremamsı.", "en": "Burnt top, creamy centre." },
+      "caffeine": "none", "allergens": ["milk", "egg", "gluten"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "brownie", "category": "dessert", "price": 160,
+      "name": { "tr": "Sıcak Brownie", "en": "Warm Brownie" },
+      "description": { "tr": "Cevizli, ılık servis; içi akışkan.", "en": "With walnuts, served warm and fudgy." },
+      "caffeine": "low", "allergens": ["milk", "egg", "gluten", "nuts"],
+      "tags": { "temp": "hot", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "tiramisu", "category": "dessert", "price": 195,
+      "name": { "tr": "Tiramisu", "en": "Tiramisu" },
+      "description": { "tr": "Espressoya batırılmış kedi dili ve mascarpone.", "en": "Espresso-soaked ladyfingers and mascarpone." },
+      "caffeine": "low", "allergens": ["milk", "egg", "gluten"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "filling" }
+    },
+    {
+      "id": "rice-pudding", "category": "dessert", "price": 130,
+      "name": { "tr": "Fırın Sütlaç", "en": "Baked Rice Pudding" },
+      "description": { "tr": "Üstü kızarmış, tarçınla.", "en": "Oven-browned top, with cinnamon." },
+      "caffeine": "none", "allergens": ["milk"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "light" }
+    },
+    {
+      "id": "orange-almond-cake", "category": "dessert", "price": 150,
+      "name": { "tr": "Portakallı Bademli Kek", "en": "Orange Almond Cake" },
+      "description": { "tr": "Unsuz ve sütsüz; nemli, narenciye kokulu.", "en": "Flourless and dairy-free; moist and citrusy." },
+      "caffeine": "none", "allergens": ["egg", "nuts"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "light" }
+    },
+
+    {
+      "id": "cheese-toastie", "category": "snack", "price": 150,
+      "name": { "tr": "Kaşarlı Tost", "en": "Cheese Toastie" },
+      "description": { "tr": "Köy ekmeğinde bol kaşar, yanında turşu.", "en": "Plenty of kashar cheese on country bread, with pickles." },
+      "caffeine": "none", "allergens": ["milk", "gluten"],
+      "tags": { "temp": "hot", "taste": "plain", "body": "filling" }
+    },
+    {
+      "id": "avocado-toast", "category": "snack", "price": 220,
+      "name": { "tr": "Avokadolu Ekşi Maya", "en": "Avocado Sourdough" },
+      "description": { "tr": "Ezilmiş avokado, pul biber, susam ve limon.", "en": "Smashed avocado, chilli flakes, sesame and lemon." },
+      "caffeine": "none", "allergens": ["gluten", "sesame"],
+      "tags": { "temp": "hot", "taste": "plain", "body": "filling" }
+    },
+    {
+      "id": "cheese-croissant", "category": "snack", "price": 135,
+      "name": { "tr": "Peynirli Kruvasan", "en": "Cheese Croissant" },
+      "description": { "tr": "Tereyağlı kat kat hamur, beyaz peynir.", "en": "Flaky butter pastry with white cheese." },
+      "caffeine": "none", "allergens": ["milk", "gluten", "egg"],
+      "tags": { "temp": "hot", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "hummus-plate", "category": "snack", "price": 165,
+      "name": { "tr": "Humus & Sebze Çubukları", "en": "Hummus & Crudités" },
+      "description": { "tr": "Zeytinyağlı humus, havuç ve salatalık.", "en": "Olive-oil hummus with carrot and cucumber sticks." },
+      "caffeine": "none", "allergens": ["sesame"],
+      "tags": { "temp": "cold", "taste": "plain", "body": "light" }
+    },
+    {
+      "id": "granola-bowl", "category": "snack", "price": 175,
+      "name": { "tr": "Granola Kase", "en": "Granola Bowl" },
+      "description": { "tr": "Süzme yoğurt, ev yapımı granola, bal ve meyve.", "en": "Strained yoghurt, house granola, honey and fruit." },
+      "caffeine": "none", "allergens": ["milk", "gluten", "nuts"],
+      "tags": { "temp": "cold", "taste": "sweet", "body": "filling" }
+    }
+  ]
+}

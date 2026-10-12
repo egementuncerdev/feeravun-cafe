@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>QR Menü Oluşturucu — Feeravun Cafe</title>
+  <meta name="description" content="Menü bağlantınızı saniyeler içinde QR koda çevirin ve PNG olarak indirin. Feeravun Cafe dijital menü demosu." data-i18n-content="qr.metaDescription">
+  <link rel="canonical" href="https://cafe.egementuncer.dev/qr.html">
+  <meta name="theme-color" content="#F4EEE3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191817" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Feeravun Cafe">
+  <meta property="og:title" content="QR Menü Oluşturucu — Feeravun Cafe">
+  <meta property="og:description" content="Menü bağlantınızı QR koda çevirin, PNG olarak indirin.">
+  <meta property="og:url" content="https://cafe.egementuncer.dev/qr.html">
+  <meta property="og:image" content="https://cafe.egementuncer.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="tr_TR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('feeravun-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400..700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400..700&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
+  <script type="module" src="js/qr.js"></script>
+</head>
+<body class="qr-page">
+  <a class="skip-link" href="#qr-main" data-i18n="skip">Menüye atla</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="wordmark" href="./" aria-label="Feeravun Cafe ana sayfa" data-i18n-aria="header.home">
+        <span class="wordmark__name">Feeravun</span> <span class="wordmark__sub">Cafe</span>
+      </a>
+      <div class="topbar__actions">
+        <button class="icon-btn lang-btn" id="lang-toggle" type="button" aria-label="EN – Switch to English" data-i18n-aria="lang.aria">
+          <span data-i18n="lang.label">EN</span>
+        </button>
+        <button class="icon-btn theme-btn" id="theme-toggle" type="button" aria-label="Koyu temaya geç">
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container qr" id="qr-main" tabindex="-1">
+    <p><a class="qr__back" href="./" data-i18n="qr.back">← Menüye dön</a></p>
+    <p class="kicker" data-i18n="qr.eyebrow">İşletmeler için</p>
+    <h1 class="qr__title" data-i18n="qr.title">QR kodunuzu buradan alın</h1>
+    <p class="qr__lead" data-i18n="qr.lead">Menü bağlantınızı girin, isterseniz masa numarası ekleyin. QR kodu masaya koyun; misafirleriniz okutup menüyü açsın.</p>
+
+    <div class="qr__grid">
+      <form class="qr__form" id="qr-form" novalidate>
+        <div class="field">
+          <label for="qr-url" data-i18n="qr.url">Menü bağlantısı</label>
+          <input id="qr-url" name="url" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="qr-error">
+          <p class="field__error" id="qr-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="qr-table" data-i18n="qr.table">Masa numarası (isteğe bağlı)</label>
+          <input id="qr-table" name="table" type="number" inputmode="numeric" min="1" max="999" aria-describedby="qr-table-hint">
+          <p class="field__hint" id="qr-table-hint" data-i18n="qr.tableHint">Eklenirse menüde “Masa 5” rozeti görünür.</p>
+        </div>
+        <div class="field">
+          <label for="qr-caption" data-i18n="qr.caption">QR altındaki yazı</label>
+          <input id="qr-caption" name="caption" type="text" maxlength="40" autocomplete="off">
+        </div>
+      </form>
+
+      <section class="qr__preview" aria-labelledby="qr-preview-title">
+        <h2 class="visually-hidden" id="qr-preview-title" data-i18n="qr.preview">QR kod önizlemesi</h2>
+        <canvas id="qr-canvas" width="600" height="750" role="img" aria-label="QR kod önizlemesi"></canvas>
+        <p class="qr__encodes"><span data-i18n="qr.encodes">Kodlanan adres:</span> <code id="qr-encoded"></code></p>
+        <button class="btn btn--primary qr__download" id="qr-download" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="qr.download">PNG indir</span>
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__mark" aria-hidden="true" data-mark="Feeravun"></div>
+      <div class="footer__fine">
+        <p data-i18n="footer.disclaimer">Feeravun Cafe kurgusal bir kafedir. Bu sayfa egementuncer.dev için hazırlanmış bir portföy demosudur.</p>
+        <p><a href="https://egementuncer.dev" rel="author">egementuncer.dev</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

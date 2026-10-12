@@ -5,7 +5,7 @@ Kurgusal bir kafe için **mobil öncelikli dijital QR menü** demosu. Masadaki Q
 > Feeravun Cafe kurgusal bir markadır. Gerçek bir marka adı, logo ya da ürün görseli kullanılmamıştır; ürün fotoğrafı yerine kategori başına basit çizgi SVG illüstrasyonlar kullanılır.
 > Bu proje [egementuncer.dev](https://egementuncer.dev) portföyü için hazırlanmıştır.
 
-**Canlı demo:** https://cafe.egementuncer.dev · **QR oluşturucu:** https://cafe.egementuncer.dev/qr.html
+**Canlı demo:** https://cafe.egementuncer.dev · **QR oluşturucu:** https://cafe.egementuncer.dev/qr
 
 ---
 
